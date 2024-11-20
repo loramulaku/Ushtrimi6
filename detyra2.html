@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="llogaritShumen()">Kliko për të llogaritur shumën</button>
+
+    <script>
+        function llogaritShumen() {
+            const numri1 = Number(prompt("Shkruani numrin e parë:"));
+            const numri2 = Number(prompt("Shkruani numrin e dytë:"));
+
+           
+            if (isNaN(numri1) || isNaN(numri2)) {
+                alert("Ju lutem, jepni vetëm numra të vlefshëm!");
+            } else {
+                
+                const shuma = numri1 + numri2;
+                alert("Shuma e numrave është: " + shuma);
+            }
+        }
+    </script>
+</body>
+</html>

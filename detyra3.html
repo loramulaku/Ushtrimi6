@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="kontrolloNumrin()">Kliko për të kontrolluar numrin</button>
+
+    <script>
+        function kontrolloNumrin() {
+            
+            const numri = Number(prompt("Shkruani një numër:"));
+
+
+            if (isNaN(numri)) {
+    
+                    alert("Ju lutem shkruani një numër të vlefshëm!");
+                } else {
+                
+                    if (numri % 2 === 0) {
+                        
+                        alert("Numri " + numri + " është çift.");
+                    } else {
+                        
+                        alert("Numri "+numri+"është tek.");
+                    }
+                }
+        }
+    </script>
+</body>
+</html>
